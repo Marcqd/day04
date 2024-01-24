@@ -3,7 +3,7 @@
 const { data } = await useFetch("/api/dogs");
 // clean up the data
 const breeds = data;
-console.log(breeds);
+console.log(breeds)
 </script>
 <template>
   <main>
@@ -15,7 +15,8 @@ console.log(breeds);
         <!-- Loop through the data to show all dog breeds -->
         <li v-for="breed in breeds" :key="breed.id">
           <!-- TODO: Extract breed name from key in k/v pairs -->
-          {{ breed }}
+         <h1> {{ breed }}</h1>
+         <pre></pre>
         </li>
       </ul>
     </div>
