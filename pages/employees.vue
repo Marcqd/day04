@@ -3,10 +3,7 @@
 const { data } = await useFetch("/api/employees", {
   headers: useRequestHeaders(["cookie"]),
 });
-//console.log("fetched data", data);
 const employees = data.value.employees;
-//console.log("employees: ", employees);
-
 </script>
 <template>
   <main>
@@ -15,13 +12,13 @@ const employees = data.value.employees;
   </header>
     <!-- render the fetched data -->
   <div>
-    <ul>
+   <ul>
       <li v-for="employee in employees" :key="employee.EMPLOYEE_ID">
         <h3>Name: {{ employee.FIRST_NAME }} {{ employee.LAST_NAME }}</h3>
         <p>Email: {{ employee.EMAIL }}</p>
         <p>Phone: {{ employee.PHONE_NUMBER }}</p>
       </li>
-    </ul>
+      </ul>
   </div>
   </main>
 </template>
