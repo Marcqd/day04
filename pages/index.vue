@@ -22,7 +22,8 @@ const clientSideExample = "Updated Blah";
       <ul>
         <li v-for="character in characters.data" :key="character.id">
           <h3>{{ character.name }}</h3>
-          <img :src="character.imageUrl" />
+          {{ 'Films: ' + character.films }}
+          <pre><img :src="character.imageUrl" /></pre>
         </li>
       </ul>
     </section>

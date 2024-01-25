@@ -5,6 +5,7 @@
     </div>
     <nav>
       <NuxtLink to="employees">Employees</NuxtLink>
+      <NuxtLink to="departments">Departments</NuxtLink>
       <NuxtLink to="dogs">Dogs</NuxtLink>
       <NuxtLink to="signup">Sign Up Page</NuxtLink>
     </nav>

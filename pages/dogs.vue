@@ -3,7 +3,7 @@
 const { data } = await useFetch("/api/dogs");
 // clean up the data
 const breeds = data;
-console.log(breeds)
+//console.log(breeds)
 </script>
 <template>
   <main>
